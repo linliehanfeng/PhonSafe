@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--在去头的同时还保留当前的主题样式-->
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>

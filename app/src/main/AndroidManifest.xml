@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hanfeng.phonsafe">
+    package="com.example.hanfeng.phonsafe"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 上面两项是版本号和版本名称  在版本更新的时候使用 -->
+    <!--
+           versionName
+        版本名称1.0.0
+        最后一位：代表修复原本bug
+        第二位：代表更细了部分功能
+        第一位：项目的重大更新（代码的重构，大部分数据功能的添加，界面的整体修改）
+    -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,13 +22,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".acticity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".acticity.HomeActivity"></activity>
     </application>
 
 </manifest>

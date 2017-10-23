@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:background="@mipmap/holiday3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hanfeng.phonsafe.MainActivity">
+    tools:context="com.example.hanfeng.phonsafe.acticity.SplashActivity">
 
+    <!--android:shadowRadius="5"
+        阴影所在范围的大小
+    -->
     <TextView
-        android:id="@+id/tv"
+        android:id="@+id/tv_version"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:textSize="16sp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:shadowColor="@color/colorAccent"
+        android:text="版本名称"
       />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_version"/>
 
-</LinearLayout>
+
+</RelativeLayout>
